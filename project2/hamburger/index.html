@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Hamburger</title>
+</head>
+
+<body>
+	<form action="#" class="hamburger">
+		<fieldset class="hamburger_set">
+			<label for="little">
+				<input type="radio" name="size" value="little" class="hamburger_input" id="little" data-price="50"
+					data-calories="20">
+				Маленький (50 рублей, 20 калорий)
+			</label>
+			<label for="big">
+				<input type="radio" value="big" name="size" id="big" class="hamburger_input" data-price="100"
+					data-calories="40">
+				Большой (100 рублей, 40 калорий)
+			</label>
+		</fieldset>
+		<fieldset class="hamburger_set">
+			<label for="cheese">
+				<input type="checkbox" name="topping" value="cheese" class="hamburger_chekbox" id="cheese"
+					data-price="10" data-calories="20">
+				С сыром (+10 рублей, +20 калорий)
+			</label>
+			<label for="salad">
+				<input type="checkbox" name="topping" value="salad" class="hamburger_chekbox" id="salad" data-price="20"
+					data-calories="5">
+				С салатом (+20 рублей, +5 калорий)
+			</label>
+			<label for="potato">
+				<input type="checkbox" name="topping" value="potato" class="hamburger_chekbox" id="potato"
+					data-price="15" data-calories="10">
+				С картофелем (+15 рублей, +10 калорий)
+			</label>
+		</fieldset>
+		<fieldset class="hamburger_set">
+			<label for="spicies">
+				<input type="checkbox" name="addition" value="spicies" class="hamburger_chekbox" id="spicies"
+					data-price="15" data-calories="0">
+				Посыпать приправой (+15 рублей, +0 калорий)
+			</label>
+			<label for="mayonesse">
+				<input type="checkbox" name="addition" value="mayonesse" class="hamburger_chekbox" id="mayonesse"
+					data-price="20" data-calories="5">
+				Полить майонезом (+20 рублей, +5 калорий)
+			</label>
+		</fieldset>
+		<div class="hamburger_total">
+			<button class="hamburger_total_btn">ИТОГО</button>
+			TOTAL PRICE:
+			<span class="hamburger_total_price">0</span>
+			calorie content:
+			<span class="hamburger_total_calories">0</span>
+		</div>
+	</form>
+	<script src="hamb.js"></script>
+	<script>
+		window.onload = () => {
+			document.querySelector('.hamburger_total_btn').addEventListener('click', () => {
+				let hamburg = new Hamburger('size', 'topping', 'addition');
+				console.log(hamburg);
+				hamburg.calculateAll('hamburger_total_price', '.hamburger_total_calories');
+			});
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.hamburger_set {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+}
+
+.hamburger_total {
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+
+.hamburger_total_btn {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 90px;
+}

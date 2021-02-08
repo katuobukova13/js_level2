@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">E-shop</div>
+        <div class="cart">
+            <button class="btn-cart"
+                onclick="document.querySelector('.cart-div').style.display='block'; document.querySelector('.btn-cart').style.display='none'; document.querySelector('.btn-cart2').style.display='block';"
+                style="display:none;">Корзина</button>
+            <button class="btn-cart2"
+                onclick=" document.querySelector('.cart-div').style.display='none'; document.querySelector('.btn-cart2').style.display='none'; document.querySelector('.btn-cart').style.display='block';">Скрыть</button>
+            <div class="cart-div"></div>
+        </div>
+    </header>
+    <main>
+        <div class="products"></div>
+    </main>
+    <!--beforestart-->
+    <!--<p>-->
+    <!--afterstart-->
+    <!--<span></span>-->
+    <!--beforeend-->
+    <!--</p> -->
+    <!--afterend-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

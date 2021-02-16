@@ -1,0 +1,26 @@
+[
+  {
+    "id_product": 124,
+    "product_name": "Keyboard",
+    "price": 1600,
+    "img": "https://images.satu.kz/107443952_w200_h200_klaviatura-usb-a4.jpg"
+  },
+  {
+    "id_product": 457,
+    "product_name": "Gamepad",
+    "price": 3000,
+    "img": "https://images.ru.prom.st/684013562_w200_h200_gejmpad-dialog-gan-kata.jpg"
+  },
+  {
+    "id_product": 123,
+    "product_name": "Ноутбук",
+    "price": 45600,
+    "img": "https://i.40nog.ru/get-marketpic/934847/market_skil4pqgDJvlAyASKi6JaA/200x200"
+  },
+  {
+    "id_product": 456,
+    "product_name": "Мышка",
+    "price": 1000,
+    "img": "https://www.atea.fi/eshop/img/3/f2884837/t15723265450000/sc8Xc8/"
+  }
+]
